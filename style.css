@@ -1,0 +1,47 @@
+body {
+  cursor: default;
+  margin: 100px auto;
+  width: 800px; }
+
+span {
+  color: blue;
+  position: relative;
+  text-decoration: underline; }
+
+.tooltip-bottom:hover::after {
+  content: attr(tooltip);
+  background: #770093;
+  position: absolute;
+  top: 100%;
+  left: -50%;
+  color: white;
+  padding: 15px 25px 15px 5px;
+  border: 1px solid;
+  border-radius: 5px;
+  z-index: 2; }
+
+.tooltip-right:hover::after {
+  content: attr(tooltip);
+  background: #770093;
+  position: absolute;
+  top: -60%;
+  left: 110%;
+  color: white;
+  padding: 15px 25px 15px 5px;
+  border: 1px solid;
+  border-radius: 5px;
+  z-index: 2; }
+
+.tooltip-top:hover::after {
+  content: attr(tooltip);
+  background: #770093;
+  position: absolute;
+  bottom: 80%;
+  left: -50%;
+  color: white;
+  padding: 15px 25px 15px 5px;
+  border: 1px solid;
+  border-radius: 5px;
+  z-index: 2; }
+
+/*# sourceMappingURL=style.css.map */
